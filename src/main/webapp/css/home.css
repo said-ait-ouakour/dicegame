@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+        #414141,
+        #6b6969
+    )0 100% no-repeat;    
+    background-size: 100% 50%;
+}
+
+.container {
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15);
+    border-radius: 9px;
+}
+
+.dice-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2.9rem;
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 2rem;
+}
+
+button{
+    text-transform: capitalize;	
+}
+
+button.replay-btn {
+    text-transform: capitalize;
+    padding: 0.6rem;
+    padding-right: 2rem;
+    font-weight: bold;
+    text-align: end;
+    padding-left: 2rem;
+}
+button.play-btn {
+    text-transform: capitalize;
+    padding: 0.6rem;
+    padding-right: 2rem;
+    font-weight: bold;
+    text-align: end;
+    padding-left: 2rem;
+}
+
+button.roll-btn {
+    padding: 1rem;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.die-container p {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -1.3rem;
+}
+
+img.dice-image {
+	height: 196px;
+	width: 213px;
+}
+
+.title {
+	text-align: center;
+}
+
+img.dice-image:last-child {
+    margin-right: -1.4rem;
+}
+
+img.dice-image:first-child {
+    margin-left: -1.4rem;
+}
+
+.main-section {
+	height: 80vh;
+	background-color: #fff;
+	border-radius: 9px;
+	/*padding-top: 10rem;*/
+	width: 65%;
+}
+
+.shake {
+	animation: shake 0.5s infinite;
+}
+
+@keyframes shake { 
+	
+	0% {
+	transform: rotate(8deg);
+	}
+	50% {
+	transform:rotate(-8deg)
+	}
+	100%{
+	transform:rotate(8deg);
+	}
+}
