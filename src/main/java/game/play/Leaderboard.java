@@ -41,7 +41,7 @@ public class Leaderboard extends HttpServlet {
 
 			ArrayList<User> users = (ArrayList<User>) cntx.getAttribute("users");
 
-			// supported by jdk 1.8
+			// supported by jre 1.8
 			users.sort(Collections
 					.reverseOrder((user1, user2) -> Double.compare(user1.getBestScore(), user2.getBestScore())));
 
