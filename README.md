@@ -1,1 +1,1 @@
-﻿# Dice Game With Servlet Jakarta
+﻿# Dice Game Using Servlet Jakarta
